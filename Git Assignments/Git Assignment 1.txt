@@ -1,0 +1,359 @@
+donsahu@LIN24004412 MINGW64 ~
+$ cd desktop
+
+donsahu@LIN24004412 MINGW64 ~/desktop
+$ mkdir project_dir
+
+donsahu@LIN24004412 MINGW64 ~/desktop
+$ cd project_dir
+
+donsahu@LIN24004412 MINGW64 ~/desktop/project_dir
+$ git init
+Initialized empty Git repository in C:/Users/DONSAHU/Desktop/project_dir/.git/
+
+donsahu@LIN24004412 MINGW64 ~/desktop/project_dir (master)
+$ touch index.html
+
+donsahu@LIN24004412 MINGW64 ~/desktop/project_dir (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        index.html
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+donsahu@LIN24004412 MINGW64 ~/desktop/project_dir (master)
+$ git add .
+
+donsahu@LIN24004412 MINGW64 ~/desktop/project_dir (master)
+$ git commit -m "commit 1"
+[master (root-commit) 5f6c038] commit 1
+ Committer: Sahu <donald.a.sahu@capgemini.com>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 11 insertions(+)
+ create mode 100644 index.html
+
+donsahu@LIN24004412 MINGW64 ~/desktop/project_dir (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+donsahu@LIN24004412 MINGW64 ~/desktop/project_dir (master)
+$ touch info.txt
+
+donsahu@LIN24004412 MINGW64 ~/desktop/project_dir (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   index.html
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        info.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+donsahu@LIN24004412 MINGW64 ~/desktop/project_dir (master)
+$ touch .gitignore
+
+donsahu@LIN24004412 MINGW64 ~/desktop/project_dir (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   index.html
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        .gitignore
+        info.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+donsahu@LIN24004412 MINGW64 ~/desktop/project_dir (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   index.html
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        .gitignore
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+donsahu@LIN24004412 MINGW64 ~/desktop/project_dir (master)
+$ git add .
+
+donsahu@LIN24004412 MINGW64 ~/desktop/project_dir (master)
+$ git commit -m "Commit 2 Added gitignore"
+[master ec5cab7] Commit 2 Added gitignore
+ Committer: Sahu <donald.a.sahu@capgemini.com>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 2 files changed, 3 insertions(+), 1 deletion(-)
+ create mode 100644 .gitignore
+
+donsahu@LIN24004412 MINGW64 ~/desktop/project_dir (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+donsahu@LIN24004412 MINGW64 ~/desktop/project_dir (master)
+$ git log
+commit ec5cab746fb4fbd45150206cc806945d70275ff1 (HEAD -> master)
+Author: Sahu <donald.a.sahu@capgemini.com>
+Date:   Wed Dec 28 18:23:30 2022 +0530
+
+    Commit 2 Added gitignore
+
+commit 5f6c03871867179d1255d702a1ffea2f69f43a5c
+Author: Sahu <donald.a.sahu@capgemini.com>
+Date:   Wed Dec 28 18:05:44 2022 +0530
+
+    commit 1
+
+donsahu@LIN24004412 MINGW64 ~/desktop/project_dir (master)
+$ git checkout index.html
+Updated 1 path from the index
+
+donsahu@LIN24004412 MINGW64 ~/desktop/project_dir (master)
+$ git add index.html
+
+donsahu@LIN24004412 MINGW64 ~/desktop/project_dir (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   index.html
+
+
+donsahu@LIN24004412 MINGW64 ~/desktop/project_dir (master)
+$ git rm --cached index.html
+rm 'index.html'
+
+donsahu@LIN24004412 MINGW64 ~/desktop/project_dir (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        deleted:    index.html
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        index.html
+
+
+donsahu@LIN24004412 MINGW64 ~/desktop/project_dir (master)
+$ git config --global alias.my_add add
+error: invalid key: alias.my_add
+
+donsahu@LIN24004412 MINGW64 ~/desktop/project_dir (master)
+$ git config --global alias.my-add add
+
+donsahu@LIN24004412 MINGW64 ~/desktop/project_dir (master)
+$ my-add index.html
+bash: my-add: command not found
+
+donsahu@LIN24004412 MINGW64 ~/desktop/project_dir (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        deleted:    index.html
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        index.html
+
+
+donsahu@LIN24004412 MINGW64 ~/desktop/project_dir (master)
+$ git my-add index.html
+
+donsahu@LIN24004412 MINGW64 ~/desktop/project_dir (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   index.html
+
+
+donsahu@LIN24004412 MINGW64 ~/desktop/project_dir (master)
+$ git commit -m "Commit 3 Renamed add"
+[master 7b98cec] Commit 3 Renamed add
+ Committer: Sahu <donald.a.sahu@capgemini.com>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 1 insertion(+)
+
+donsahu@LIN24004412 MINGW64 ~/desktop/project_dir (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+donsahu@LIN24004412 MINGW64 ~/desktop/project_dir (master)
+$ commit log
+bash: commit: command not found
+
+donsahu@LIN24004412 MINGW64 ~/desktop/project_dir (master)
+$ git log
+commit 7b98cec735f385f57d692b494f89eb5a66c2ce79 (HEAD -> master)
+Author: Sahu <donald.a.sahu@capgemini.com>
+Date:   Wed Dec 28 18:39:51 2022 +0530
+
+    Commit 3 Renamed add
+
+commit ec5cab746fb4fbd45150206cc806945d70275ff1
+Author: Sahu <donald.a.sahu@capgemini.com>
+Date:   Wed Dec 28 18:23:30 2022 +0530
+
+    Commit 2 Added gitignore
+
+commit 5f6c03871867179d1255d702a1ffea2f69f43a5c
+Author: Sahu <donald.a.sahu@capgemini.com>
+Date:   Wed Dec 28 18:05:44 2022 +0530
+
+    commit 1
+
+donsahu@LIN24004412 MINGW64 ~/desktop/project_dir (master)
+$ git reset  7b98cec735f385f57d692b494f89eb5a66c2ce79
+
+donsahu@LIN24004412 MINGW64 ~/desktop/project_dir (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+donsahu@LIN24004412 MINGW64 ~/desktop/project_dir (master)
+$ git log
+commit 7b98cec735f385f57d692b494f89eb5a66c2ce79 (HEAD -> master)
+Author: Sahu <donald.a.sahu@capgemini.com>
+Date:   Wed Dec 28 18:39:51 2022 +0530
+
+    Commit 3 Renamed add
+
+commit ec5cab746fb4fbd45150206cc806945d70275ff1
+Author: Sahu <donald.a.sahu@capgemini.com>
+Date:   Wed Dec 28 18:23:30 2022 +0530
+
+    Commit 2 Added gitignore
+
+commit 5f6c03871867179d1255d702a1ffea2f69f43a5c
+Author: Sahu <donald.a.sahu@capgemini.com>
+Date:   Wed Dec 28 18:05:44 2022 +0530
+
+    commit 1
+
+donsahu@LIN24004412 MINGW64 ~/desktop/project_dir (master)
+$ git revert  7b98cec735f385f57d692b494f89eb5a66c2ce79
+[master a62b1f0] Revert "Commit 3 Renamed add" Commit 3 Reverted This reverts commit 7b98cec735f385f57d692b494f89eb5a66c2ce79.
+ Committer: Sahu <donald.a.sahu@capgemini.com>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 1 deletion(-)
+
+donsahu@LIN24004412 MINGW64 ~/desktop/project_dir (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+donsahu@LIN24004412 MINGW64 ~/desktop/project_dir (master)
+$ gitlog
+bash: gitlog: command not found
+
+donsahu@LIN24004412 MINGW64 ~/desktop/project_dir (master)
+$ git log
+commit a62b1f03971f6cb8d28f28deaeb98d664a9bc230 (HEAD -> master)
+Author: Sahu <donald.a.sahu@capgemini.com>
+Date:   Wed Dec 28 18:48:21 2022 +0530
+
+    Revert "Commit 3 Renamed add"
+    Commit 3 Reverted
+    This reverts commit 7b98cec735f385f57d692b494f89eb5a66c2ce79.
+
+commit 7b98cec735f385f57d692b494f89eb5a66c2ce79
+Author: Sahu <donald.a.sahu@capgemini.com>
+Date:   Wed Dec 28 18:39:51 2022 +0530
+
+    Commit 3 Renamed add
+
+commit ec5cab746fb4fbd45150206cc806945d70275ff1
+Author: Sahu <donald.a.sahu@capgemini.com>
+Date:   Wed Dec 28 18:23:30 2022 +0530
+
+    Commit 2 Added gitignore
+
+commit 5f6c03871867179d1255d702a1ffea2f69f43a5c
+Author: Sahu <donald.a.sahu@capgemini.com>
+Date:   Wed Dec 28 18:05:44 2022 +0530
+:...skipping...
+commit a62b1f03971f6cb8d28f28deaeb98d664a9bc230 (HEAD -> master)
+Author: Sahu <donald.a.sahu@capgemini.com>
+Date:   Wed Dec 28 18:48:21 2022 +0530
+
+    Revert "Commit 3 Renamed add"
+    Commit 3 Reverted
+    This reverts commit 7b98cec735f385f57d692b494f89eb5a66c2ce79.
+
+commit 7b98cec735f385f57d692b494f89eb5a66c2ce79
+Author: Sahu <donald.a.sahu@capgemini.com>
+Date:   Wed Dec 28 18:39:51 2022 +0530
+
+    Commit 3 Renamed add
+
+commit ec5cab746fb4fbd45150206cc806945d70275ff1
+Author: Sahu <donald.a.sahu@capgemini.com>
+Date:   Wed Dec 28 18:23:30 2022 +0530
+
+    Commit 2 Added gitignore
+
+commit 5f6c03871867179d1255d702a1ffea2f69f43a5c
+Author: Sahu <donald.a.sahu@capgemini.com>
+Date:   Wed Dec 28 18:05:44 2022 +0530
+
+    commit 1

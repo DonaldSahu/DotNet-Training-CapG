@@ -1,0 +1,207 @@
+donsahu@LIN24004412 MINGW64 ~
+$ cd desktop
+
+donsahu@LIN24004412 MINGW64 ~/desktop (master)
+$ mkdir AssignmentJS
+
+donsahu@LIN24004412 MINGW64 ~/desktop (master)
+$ cd AssignmentJS
+
+donsahu@LIN24004412 MINGW64 ~/desktop/AssignmentJS (master)
+$ touch README.txt
+
+donsahu@LIN24004412 MINGW64 ~/desktop/AssignmentJS (master)
+$ git init
+Initialized empty Git repository in C:/Users/DONSAHU/Desktop/AssignmentJS/.git/
+
+donsahu@LIN24004412 MINGW64 ~/desktop/AssignmentJS (master)
+$ git add .
+
+donsahu@LIN24004412 MINGW64 ~/desktop/AssignmentJS (master)
+$ git commit -m "Commit 1 mastert"
+[master (root-commit) 6f6af8a] Commit 1 mastert
+ Committer: Sahu <donald.a.sahu@capgemini.com>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 README.txt
+
+donsahu@LIN24004412 MINGW64 ~/desktop/AssignmentJS (master)
+$ git checkout -b js-assignment
+Switched to a new branch 'js-assignment'
+
+donsahu@LIN24004412 MINGW64 ~/desktop/AssignmentJS (js-assignment)
+$ touch test.txt
+
+donsahu@LIN24004412 MINGW64 ~/desktop/AssignmentJS (js-assignment)
+$ git add .
+
+donsahu@LIN24004412 MINGW64 ~/desktop/AssignmentJS (js-assignment)
+$ git commit -m "Commit 2 js-assignment"
+[js-assignment e706bcf] Commit 2 js-assignment
+ Committer: Sahu <donald.a.sahu@capgemini.com>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 2 files changed, 2 insertions(+)
+ create mode 100644 test.txt
+
+donsahu@LIN24004412 MINGW64 ~/desktop/AssignmentJS (js-assignment)
+$ git status
+On branch js-assignment
+nothing to commit, working tree clean
+
+donsahu@LIN24004412 MINGW64 ~/desktop/AssignmentJS (js-assignment)
+$ git status
+On branch js-assignment
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   README.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+donsahu@LIN24004412 MINGW64 ~/desktop/AssignmentJS (js-assignment)
+$ git commit -a -m "Commit 3 js-assignment"
+[js-assignment e641134] Commit 3 js-assignment
+ Committer: Sahu <donald.a.sahu@capgemini.com>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+donsahu@LIN24004412 MINGW64 ~/desktop/AssignmentJS (js-assignment)
+$ git checkout master
+Switched to branch 'master'
+
+donsahu@LIN24004412 MINGW64 ~/desktop/AssignmentJS (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   README.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+donsahu@LIN24004412 MINGW64 ~/desktop/AssignmentJS (master)
+$ git commit -a -m "Commit 4 master"
+[master 4ab1ff5] Commit 4 master
+ Committer: Sahu <donald.a.sahu@capgemini.com>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 1 insertion(+)
+
+donsahu@LIN24004412 MINGW64 ~/desktop/AssignmentJS (master)
+$ git checkout js-assignment
+Switched to branch 'js-assignment'
+
+donsahu@LIN24004412 MINGW64 ~/desktop/AssignmentJS (js-assignment)
+$ git status
+On branch js-assignment
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   test.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+donsahu@LIN24004412 MINGW64 ~/desktop/AssignmentJS (js-assignment)
+$ git commit -a -m "Commit 5 js-assignment"
+[js-assignment 67d6814] Commit 5 js-assignment
+ Committer: Sahu <donald.a.sahu@capgemini.com>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+donsahu@LIN24004412 MINGW64 ~/desktop/AssignmentJS (js-assignment)
+$ git checkout master
+Switched to branch 'master'
+
+donsahu@LIN24004412 MINGW64 ~/desktop/AssignmentJS (master)
+$ git merge js-assignment
+Auto-merging README.txt
+CONFLICT (content): Merge conflict in README.txt
+Automatic merge failed; fix conflicts and then commit the result.
+
+donsahu@LIN24004412 MINGW64 ~/desktop/AssignmentJS (master|MERGING)
+$ git add README.txt
+
+donsahu@LIN24004412 MINGW64 ~/desktop/AssignmentJS (master|MERGING)
+$ git status
+On branch master
+All conflicts fixed but you are still merging.
+  (use "git commit" to conclude merge)
+
+Changes to be committed:
+        modified:   README.txt
+        new file:   test.txt
+
+
+donsahu@LIN24004412 MINGW64 ~/desktop/AssignmentJS (master|MERGING)
+$ git commit -m "Commit 6 Merged"
+[master 5ca5e2d] Commit 6 Merged
+ Committer: Sahu <donald.a.sahu@capgemini.com>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+
+donsahu@LIN24004412 MINGW64 ~/desktop/AssignmentJS (master)
+$ git branch --merged
+  js-assignment
+* master
+
+donsahu@LIN24004412 MINGW64 ~/desktop/AssignmentJS (master)
+$ git branch -d js-assignment
+Deleted branch js-assignment (was 67d6814).
