@@ -1,0 +1,10 @@
+C:\Users\DONSAHU\source\repos\LitwareLib\bin\Debug\netcoreapp3.1\LitwareLib.deps.json
+C:\Users\DONSAHU\source\repos\LitwareLib\bin\Debug\netcoreapp3.1\LitwareLib.dll
+C:\Users\DONSAHU\source\repos\LitwareLib\bin\Debug\netcoreapp3.1\LitwareLib.pdb
+C:\Users\DONSAHU\source\repos\LitwareLib\obj\Debug\netcoreapp3.1\LitwareLib.csproj.AssemblyReference.cache
+C:\Users\DONSAHU\source\repos\LitwareLib\obj\Debug\netcoreapp3.1\LitwareLib.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\DONSAHU\source\repos\LitwareLib\obj\Debug\netcoreapp3.1\LitwareLib.AssemblyInfoInputs.cache
+C:\Users\DONSAHU\source\repos\LitwareLib\obj\Debug\netcoreapp3.1\LitwareLib.AssemblyInfo.cs
+C:\Users\DONSAHU\source\repos\LitwareLib\obj\Debug\netcoreapp3.1\LitwareLib.csproj.CoreCompileInputs.cache
+C:\Users\DONSAHU\source\repos\LitwareLib\obj\Debug\netcoreapp3.1\LitwareLib.dll
+C:\Users\DONSAHU\source\repos\LitwareLib\obj\Debug\netcoreapp3.1\LitwareLib.pdb

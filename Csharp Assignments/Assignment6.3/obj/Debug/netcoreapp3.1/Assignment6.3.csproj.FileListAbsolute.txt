@@ -1,0 +1,14 @@
+C:\Users\DONSAHU\source\repos\Assignment6.3\bin\Debug\netcoreapp3.1\Assignment6.3.exe
+C:\Users\DONSAHU\source\repos\Assignment6.3\bin\Debug\netcoreapp3.1\Assignment6.3.deps.json
+C:\Users\DONSAHU\source\repos\Assignment6.3\bin\Debug\netcoreapp3.1\Assignment6.3.runtimeconfig.json
+C:\Users\DONSAHU\source\repos\Assignment6.3\bin\Debug\netcoreapp3.1\Assignment6.3.runtimeconfig.dev.json
+C:\Users\DONSAHU\source\repos\Assignment6.3\bin\Debug\netcoreapp3.1\Assignment6.3.dll
+C:\Users\DONSAHU\source\repos\Assignment6.3\bin\Debug\netcoreapp3.1\Assignment6.3.pdb
+C:\Users\DONSAHU\source\repos\Assignment6.3\obj\Debug\netcoreapp3.1\Assignment6.3.csproj.AssemblyReference.cache
+C:\Users\DONSAHU\source\repos\Assignment6.3\obj\Debug\netcoreapp3.1\Assignment6.3.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\DONSAHU\source\repos\Assignment6.3\obj\Debug\netcoreapp3.1\Assignment6.3.AssemblyInfoInputs.cache
+C:\Users\DONSAHU\source\repos\Assignment6.3\obj\Debug\netcoreapp3.1\Assignment6.3.AssemblyInfo.cs
+C:\Users\DONSAHU\source\repos\Assignment6.3\obj\Debug\netcoreapp3.1\Assignment6.3.csproj.CoreCompileInputs.cache
+C:\Users\DONSAHU\source\repos\Assignment6.3\obj\Debug\netcoreapp3.1\Assignment6.3.dll
+C:\Users\DONSAHU\source\repos\Assignment6.3\obj\Debug\netcoreapp3.1\Assignment6.3.pdb
+C:\Users\DONSAHU\source\repos\Assignment6.3\obj\Debug\netcoreapp3.1\Assignment6.3.genruntimeconfig.cache
