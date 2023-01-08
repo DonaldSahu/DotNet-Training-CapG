@@ -1,0 +1,30 @@
+                             
+                                                  /*ASSIGNMENT 2*/
+
+SELECT * FROM tblCustomer
+WHERE Country = 'Germany';
+
+SELECT CONCAT (FirstName, CHAR(9), LastName) as 'Customer Names'
+FROM tblCustomer;
+
+select * from tblCustomer
+where Phone = '';
+
+SELECT *
+FROM tblCustomer
+WHERE FirstName LIKE '_u%';
+
+SELECT * FROM tblOrderItem
+WHERE UnitPrice BETWEEN 10 AND 20;
+
+SELECT * FROM tblOrder ORDER BY OrderDate;
+
+SELECT * FROM tblProduct
+WHERE Package = 'Exotic Liquids';
+
+SELECT * FROM Emoloyees
+WHERE Manager is not NULL;
+
+SELECT  fk_ProductId as ProductID ,AVG(Quantity) as Average
+FROM tblOrderItem
+GROUP BY  fk_ProductId;

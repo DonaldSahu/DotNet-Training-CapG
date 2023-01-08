@@ -1,0 +1,40 @@
+
+                                                /*ASSIGNMENT 4*/
+
+SELECT * FROM tblOrder;
+SELECT * FROM tblEmployee;
+SELECT * FROM tblProduct;
+
+select Top 1 * from tblEmployee
+order by DateOfJoining;
+
+select Top 1 * from tblEmployee
+order by DateOfJoining DESC;
+
+select ProductName,Max(UnitPrice) as Price
+from tblProduct
+UNION
+select ProductName,Min(UnitPrice) 
+from tblProduct;
+
+SELECT * FROM tblProduct
+where unitinstock < unitinorder;
+
+select tblCustomer.Id, tblCustomer.FirstName + ' ' + tblCustomer.LastName as Name, tblCustomer.City,tblCustomer.Country,
+tblCustomer.Phone,tblOrder.OrderNumber,tblOrder.OrderDate,tblOrder.TotalAmount
+from tblCustomer
+inner join
+tblOrder on tblCustomer.Id = tblOrder.Id;
+
+select tblOrder.fk_CustomerId as CustomerId, tblCustomer.FirstName + ' ' + tblCustomer.LastName as Name, tblCustomer.City,
+tblCustomer.Country, tblCustomer.Phone ,count(tblOrder.fk_CustomerId) as NoOfOrders
+from tblOrder
+inner join tblCustomer on tblOrder.fk_CustomerId=tblCustomer.Id
+group by tblOrder.fk_CustomerId;
+
+select Id as CustomerID from 
+tblCustomer
+where FirstName Like '%RI%';
+
+
+/*-----------------------------------------------------------------------------------------------------------------*/

@@ -1,0 +1,21 @@
+
+                                          /*ASSIGNMENT 3*/
+
+SELECT tblCustomer.FirstName, tblOrder.OrderDate, tblOrder.TotalAmount
+FROM tblOrder
+INNER JOIN tblCustomer on tblOrder.fk_CustomerId = tblCustomer.Id
+WHERE tblCustomer.Phone = '9935992388';
+
+SELECT * FROM tblProduct
+WHERE Package = 'Exotic Liquids';
+
+SELECT tblCustomer.FirstName, tblOrder.OrderNumber, tblOrder.OrderDate, tblOrder.TotalAmount
+FROM tblOrder
+INNER JOIN tblCustomer on tblOrder.fk_CustomerId = tblCustomer.Id
+WHERE tblCustomer.City NOT IN ('Indore');
+
+
+SELECT tblOrderItem.Id,tblProduct.ProductName,tblProduct.Package,tblOrderItem.UnitPrice,tblOrderItem.Quantity 
+FROM tblOrderItem
+INNER JOIN tblProduct on tblOrderItem.fk_ProductId = tblProduct.Id
+WHERE tblProduct.ProductName = 'Hand Wash';

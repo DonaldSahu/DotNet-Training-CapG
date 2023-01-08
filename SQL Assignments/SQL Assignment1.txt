@@ -1,0 +1,138 @@
+                                              
+                                                   ASSIGNMENT 1
+
+create table tblCustomer (
+Id int NOT NULL PRIMARY KEY,
+FirstName nvarchar(40) NOT NULL,
+LastName nvarchar(40),
+City nvarchar(40),
+Country nvarchar(40),
+Phone nvarchar(40)
+)
+
+INSERT INTO tblCustomer (Id, FirstName, LastName, City, Country, Phone)
+VALUES (1, 'Donald', 'Sahu', 'Mumbai', 'India','8435932382'),
+(2, 'Aarush', 'Sharma', 'Indore', 'India','9935992388'),
+(3, 'Hutasan', 'Sahu', 'Raipur', 'India','9535932382'),
+(4, 'Dharini', 'Sahu', 'Pune', 'India','9735932388'),
+(5, 'Ritu', 'Verma', 'Dewas', 'India','8835932388'),
+(6, 'Dave', 'Hofmann', 'Berlin', 'Germany','+49 30 359323');
+
+INSERT INTO tblCustomer (Id, FirstName, LastName, City, Country, Phone)
+VALUES (7, 'Steve', 'Clark', 'Sedney', 'Australia','+61 55 452399'),
+(8, 'Phil', 'Peterson', 'Manchester', 'UK','+44 67 555673'),
+(9, 'Jane', 'Foster', 'Munich', 'Germany','+49 30 889322');
+
+select * from tblCustomer;
+
+update tblCustomer set Phone = ''
+where Id = 5;
+
+CREATE INDEX IndexCustomerName
+ON tblCustomer (FirstName ASC);
+
+CREATE TABLE tblOrder(
+Id int NOT NULL PRIMARY KEY,
+OrderDate datetime NOT NULL,
+OrderNumber nvarchar(10),
+fk_CustomerId int FOREIGN KEY REFERENCES tblCustomer(Id),
+TotalAmount decimal(12,2)
+);
+
+INSERT INTO tblOrder (Id, OrderDate, OrderNumber, fk_CustomerId, TotalAmount)
+VALUES (1, '2023-01-02 13:23:44', 101, 1, 3000.50),
+(2, '2023-01-01 11:34:45', 102, 3, 2500.50),
+(3, '2023-01-02 09:00:54', 103, 1, 3500),
+(4, '2022-12-31 23:00:15', 104, 2, 2000),
+(5, '2022-12-31 22:34:43', 105, 2, 2800.43);
+INSERT INTO tblOrder
+VALUES (6, '2022-11-30 11:25:30', 106, 1, 4500);
+
+SELECT * FROM tblOrder;
+SELECT * FROM tblCustomer;
+
+
+CREATE INDEX IndexOrderCustomerId
+ON tblOrder (fk_CustomerId);
+
+CREATE INDEX IndexOrderOrderDate
+ON tblOrder (OrderDate);
+
+
+CREATE TABLE tblProduct(
+Id int NOT NULL PRIMARY KEY,
+ProductName nvarchar(50),
+UnitPrice decimal(12,2),
+Package nvarchar(30),
+isDiscontinued bit
+);
+
+SELECT * FROM tblProduct;
+
+INSERT INTO tblProduct(Id, ProductName,UnitPrice,Package,isDiscontinued)
+VALUES(1, 'Hand Wash', 16.25, 'Exotic Liquids', 0),
+(2, 'Shower Gel', 32.65, 'Nivea', 0),
+(3, 'Hair Oil', 19.75, 'Exotic Liquids', 0),
+(4, 'Body Lotion', 18.55, 'Joy', 1),
+(5, 'Dish Gel', 22.00, 'Exotic Liquids', 1);
+INSERT INTO tblProduct(Id, ProductName,UnitPrice,Package,isDiscontinued)
+VALUES(6, 'Hand Wash', 16.25, 'Exotic Liquids', 0);
+
+CREATE INDEX IndexProductSupplierId
+on tblProduct (Id);
+
+CREATE INDEX IndexProductProductName
+on tblProduct (ProductName);
+
+CREATE TABLE tblOrderItem(
+Id int NOT NULL PRIMARY KEY,
+fk_OrderId int FOREIGN KEY REFERENCES tblOrder(Id),
+fk_ProductId int FOREIGN KEY REFERENCES tblProduct(Id),
+UnitPrice decimal(12,2),
+Quantity int
+);
+
+INSERT INTO tblOrderItem (Id, fk_OrderId, fk_ProductId, UnitPrice, Quantity)
+VALUES(1, 3, 1, 16.25, 15),
+(2, 4, 4, 18.55, 12),
+(3, 1, 3, 19.75, 14),
+(4, 1, 2, 32.65, 10);
+INSERT INTO tblOrderItem (Id, fk_OrderId, fk_ProductId, UnitPrice, Quantity)
+VALUES(5, 3, 1, 16.25, 10);
+
+SELECT * FROM tblOrderItem;
+
+CREATE INDEX IndexOrderItemOrderId
+on tblOrderItem (fk_OrderId);
+
+CREATE INDEX IndexOrderItemProductId
+on tblOrderItem (fk_ProductId);
+
+CREATE TABLE tblEmployee(
+Id int NOT NULL Primary Key,
+FirstName nvarchar(30) NOT NULL,
+LastName nvarchar(30),
+DateOfJoining DateTime NOT NULL
+);
+
+INSERT INTO tblEmployee
+VALUES (1,'David', 'Hughes','2015-01-02'),
+(2,'Doni', 'Sao','2022-12-15'),
+(3,'Peter', 'Parker','2016-03-22'),
+(4,'John', 'Philip','2015-04-11'),
+(5,'Tim', 'Williamson','2019-11-14');
+
+/*------------------------------------------------------------------------------------------------------------------------------
+
+Queries
+
+SELECT * FROM tblCustomer;
+
+SELECT Country
+FROM tblCustomer
+WHERE Country LIKE 'A%' OR
+Country LIKE 'I%';
+
+SELECT FirstName
+FROM tblCustomer
+WHERE FirstName LIKE '__t%';
