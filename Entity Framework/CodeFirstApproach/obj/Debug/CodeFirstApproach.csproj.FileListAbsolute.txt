@@ -1,0 +1,14 @@
+C:\Users\DONSAHU\source\repos\CodeFirstApproach\bin\Debug\CodeFirstApproach.exe.config
+C:\Users\DONSAHU\source\repos\CodeFirstApproach\bin\Debug\CodeFirstApproach.exe
+C:\Users\DONSAHU\source\repos\CodeFirstApproach\bin\Debug\CodeFirstApproach.pdb
+C:\Users\DONSAHU\source\repos\CodeFirstApproach\bin\Debug\EntityFramework.dll
+C:\Users\DONSAHU\source\repos\CodeFirstApproach\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\DONSAHU\source\repos\CodeFirstApproach\bin\Debug\EntityFramework.xml
+C:\Users\DONSAHU\source\repos\CodeFirstApproach\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\DONSAHU\source\repos\CodeFirstApproach\obj\Debug\CodeFirstApproach.csproj.AssemblyReference.cache
+C:\Users\DONSAHU\source\repos\CodeFirstApproach\obj\Debug\CodeFirstApproach.csproj.CoreCompileInputs.cache
+C:\Users\DONSAHU\source\repos\CodeFirstApproach\obj\Debug\CodeFirstApproach.csproj.CopyComplete
+C:\Users\DONSAHU\source\repos\CodeFirstApproach\obj\Debug\CodeFirstApproach.exe
+C:\Users\DONSAHU\source\repos\CodeFirstApproach\obj\Debug\CodeFirstApproach.pdb
+C:\Users\DONSAHU\source\repos\CodeFirstApproach\obj\Debug\CodeFirstApproach.Migrations.createCodeFirstDemo.resources
+C:\Users\DONSAHU\source\repos\CodeFirstApproach\obj\Debug\CodeFirstApproach.csproj.GenerateResource.cache

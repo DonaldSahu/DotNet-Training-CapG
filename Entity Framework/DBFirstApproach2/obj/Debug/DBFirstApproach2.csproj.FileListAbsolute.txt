@@ -1,0 +1,12 @@
+C:\Users\DONSAHU\source\repos\DBFirstApproach2\bin\Debug\DBFirstApproach2.exe.config
+C:\Users\DONSAHU\source\repos\DBFirstApproach2\bin\Debug\DBFirstApproach2.exe
+C:\Users\DONSAHU\source\repos\DBFirstApproach2\bin\Debug\DBFirstApproach2.pdb
+C:\Users\DONSAHU\source\repos\DBFirstApproach2\bin\Debug\EntityFramework.dll
+C:\Users\DONSAHU\source\repos\DBFirstApproach2\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\DONSAHU\source\repos\DBFirstApproach2\bin\Debug\EntityFramework.xml
+C:\Users\DONSAHU\source\repos\DBFirstApproach2\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\DONSAHU\source\repos\DBFirstApproach2\obj\Debug\DBFirstApproach2.csproj.AssemblyReference.cache
+C:\Users\DONSAHU\source\repos\DBFirstApproach2\obj\Debug\DBFirstApproach2.csproj.CoreCompileInputs.cache
+C:\Users\DONSAHU\source\repos\DBFirstApproach2\obj\Debug\DBFirstApproach2.csproj.CopyComplete
+C:\Users\DONSAHU\source\repos\DBFirstApproach2\obj\Debug\DBFirstApproach2.exe
+C:\Users\DONSAHU\source\repos\DBFirstApproach2\obj\Debug\DBFirstApproach2.pdb
